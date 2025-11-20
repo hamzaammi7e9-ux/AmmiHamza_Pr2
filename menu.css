@@ -3,6 +3,7 @@ body{
     padding: 0;
 }
 
+
 .menu{
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ body{
     background-color: rgb(20, 20, 20);
     justify-content: space-between; /* pushes content to edges */
     align-items: center; /* vertically center items */
-    padding: 0 100px; /* optional padding left and right */ 
+    padding: 10% 10%; /* optional padding left and right */ 
     padding-top: 9px;
     padding-bottom: 9px;
 }
@@ -26,7 +27,6 @@ body{
     font-size: 20px;
     display: flex;
     color: white;   
-    margin: 5px;
 }
 
 .menu h1 strong{  
@@ -50,13 +50,13 @@ body{
     color: #ffff;
     margin: 0;
     padding: 5px;
-    border: 3px solid transparent; /* reserve space */
+    border: 3px solid rgba(128, 128, 128, 0.137); /* reserve space */
     border-radius: 10px;
     transition: color 0.3s, border-color 0.3s; /* smooth animation */
 }
 
 .menu a:hover{
-    color: #7cfa86;
+    color: #f7f7f7;
     border: 3px solid #ffffff;
     border-radius: 10px;
 }
