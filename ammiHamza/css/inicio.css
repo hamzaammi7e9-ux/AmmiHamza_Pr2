@@ -1,0 +1,382 @@
+/* PARTIDO DESTACADO */
+
+.partido{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgb(20, 20, 20), rgb(56, 55, 55), rgb(67, 84, 241), rgb(235, 34, 34));
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 0;
+    border-bottom: 1px solid grey
+}
+
+
+.info_partido a{
+    color: rgb(36, 35, 35);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background: rgb(190, 188, 188)
+}
+
+.info_partido a:hover{
+    border: 3px solid rgb(170, 169, 169);
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.links_partido{
+    display: flex;
+    gap: 20px;
+}
+
+.partido img{
+    border-radius: 40px;
+    width: auto;  
+    height: 325px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid black
+}
+
+.info_partido h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.ver-todo{
+    margin: 10px;
+    padding: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(90deg,#10ff24, #00ddff);
+    font-weight: bolder;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    border-radius: 10px;
+    border: 4px solid rgb(0, 255, 13);
+}
+
+/* FICHAJES DESTACADOS */
+
+.fichajesImportantes {
+    background-color: rgb(43, 42, 42);
+    margin: 0;
+    padding: 2% 10%;
+    border-bottom: 1px solid rgb(255, 255, 255)
+
+}
+
+.Fichajes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.fichajesHeader{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.fichajesImportantes h3{
+    color: white;
+    margin: 0 ;
+    padding: 0;
+    font-size: 30px;
+    border-width: 0px;
+    border-bottom-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(90deg,#10ff24, #00ddff) 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.ver-todo:hover{
+    background: linear-gradient(90deg,#00ddff,#10ff24 );
+}
+
+
+
+.Fichajes article {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(30, 30, 30);
+    color: white; 
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column; 
+    height: 100%; 
+}
+
+
+
+.Fichajes article img {
+    width: 100%; 
+    aspect-ratio: 16 / 19;
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
+
+}
+
+.Fichajes article .card-content {
+    padding: 15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Fichajes article .card-content a {
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.Fichajes article .card-content a:hover {
+    padding: 10px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(#10ff24, #00ddff) 1;
+    transition: border 0.05s;
+}
+.Fichajes article .card-content p {
+    margin-bottom: 10px; 
+}
+
+.Fichajes article:hover {
+    background-color: rgb(70, 70, 70);
+    border-radius: 50px;
+    
+    transition: border-radius 0.3s;
+}
+
+/* JUGADORES DESTACADOS */
+
+.jugadoresDestacados {
+    background-color: rgb(138, 138, 138);
+    margin: 0;
+    padding: 2% 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border-bottom: 1px solid rgb(99, 98, 98)
+}
+
+.jugadoresDestacados h3{
+    width: fit-content;
+    border-width: 0px;
+    border-bottom-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(90deg,#10ff24, #00ddff) 1;
+    grid-column: 1/-1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.jugadoresDestacados .jugador{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(77, 75, 75);
+    border-radius: 10px;
+    border: 2px, solid, rgb(41, 40, 40);
+}
+
+.jugadoresDestacados .jugador:hover{
+    transform: scale(1.25);
+    transition: 0.3s;
+}
+
+
+.jugador .infoJugador {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.jugador img{
+    width: 60px;
+    object-fit: cover;
+}
+
+/* COMPETICIONES IMPORTANTES Y ASIDE */
+
+
+.competiciones{
+    padding: 2% 10%;
+    background-color: rgb(43, 42, 42);
+    border-bottom: 1px solid grey;
+}
+
+.competiciones_aside{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: start;
+}
+
+
+.competiciones h3{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    width: fit-content;
+    border-width: 0px;
+    border-bottom-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(90deg,#10ff24, #00ddff) 1;
+}
+
+.contenedor_competiciones{
+    background-color: rgb(122, 165, 202);
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.competicion {
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: fit-content;
+    color: white;
+    background-color: rgb(13, 16, 44);
+    border-radius: 15px;
+}
+
+.competicion img{
+    width: 362px; 
+    aspect-ratio: 16 / 9;
+    object-fit: cover; 
+    border-radius: 15px 15px 0 0; 
+}
+
+.competicion img:hover{
+    transform: scale(1.1);
+    border-radius: 10%;
+    transition: 2s;
+}
+
+.infoCompeticion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoCompeticion p{
+    margin-top: 10px;
+    padding: 15px;
+}
+.infoCompeticion h4{
+    margin: 15px;
+    padding: 0;
+}
+
+/* ESTO ES EL ASIDE */
+
+aside{
+    gap:40px;
+}
+
+.promocion {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: aliceblue;
+    width: min-content;
+    border-radius: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+
+.fantasy {
+    text-decoration: none;
+    font-weight: bolder;
+    background: linear-gradient(red, white);
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fantasy:hover{
+    background: linear-gradient(white, rgb(255, 0, 0));
+}
+
+.transfermarkt{
+    text-decoration: none;
+    font-weight: bolder;
+    background: linear-gradient(rgb(103, 109, 187), white);
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.transfermarkt:hover{
+    background: linear-gradient(white, rgb(103, 109, 187));
+}
+
+aside img{
+    width: 340px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover; 
+    border-radius: 15px 15px 0 0; 
+}   
+
+/* MEJORES EQUIPOS */
+
+.mejoresEquipos{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(/img/ucl-background.jpg);
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15, 15, 15);
+    padding: 2% 10%;
+    border-bottom: 1px solid grey;
+}
+
+.equiposContainer{
+    background: rgba(241, 241, 241, 0.25);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0), 0 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.equiposHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mejoresEquipos h3{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    border-width: 0px;
+    border-bottom-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(90deg,#10ff24, #00ddff) 1;
+}
+
+.equipos ol{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: bolder;
+}
+
+
